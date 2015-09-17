@@ -1,0 +1,63 @@
+{\rtf1\mac\ansicpg10000\cocoartf824\cocoasubrtf350
+{\fonttbl\f0\fswiss\fcharset77 Helvetica-Bold;\f1\fswiss\fcharset77 Helvetica;\f2\fswiss\fcharset77 Helvetica-Oblique;
+\f3\fmodern\fcharset77 Courier;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww12320\viewh11100\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\ql\qnatural\pardirnatural
+
+\f0\b\fs28 \cf0 isightcapture - capture image from quicktime video device
+\fs24 \
+
+\f1\b0 \
+
+\f2\i isightcapture [-v] [-d] [-n frame-no] [-w width] [-h height] [-t jpg|png|tiff|bmp] output-filename
+\f1\i0 \
+\
+
+\f0\b Notes\
+
+\f1\b0 \
+This small CLI tool will be useful for grabbing images to implement simple webcams etc.\
+\
+It will work without being logged and without a GUI window, unlike many other applications.\
+\
+It only has been tested with MacOS X Tiger and iSight, but might well work with other setups.\
+\
+
+\f0\b Options
+\f1\b0 \
+\
+-v 		output version information and exit\
+\
+-d		enable debugging messages. Off by default\
+\
+-n		capture nth-frame\
+\
+-w		output file pixel width. Defaults to 640 pixels.\
+\
+-h		output file pixel height. Defaults to 480 pixels.\
+\
+-t		output format - one of jpg, png, tiff or bmp. Defaults to JPEG.\
+\
+
+\f0\b Examples
+\f1\b0 \
+\
+
+\f3 $ ./isightcapture image.jpg\
+
+\f1 \
+	will output a 640x480 image in JPEG format\
+\
+
+\f3 $ ./isightcapture -w 320 -h 240 -t png image.png\
+
+\f1 \
+	will output a scaled 320x240 image in PNG format\
+\
+
+\f0\b License
+\f1\b0 \
+\
+This utility is freeware. For questions regarding isightcapture, write to axel@intergalactic.de\
+}
