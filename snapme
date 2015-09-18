@@ -34,3 +34,35 @@ if [ ! -d $myimg2 ]
                               fi
                               fi
                               unset myimg
+
+
+
+#!/bin/sh
+## Author: Simon Ljungberg @ www.nimnim.se
+#
+## Edit the 5 lines below to fit your configuration
+## URL will be copied to your clipboard!
+#HOST='yourftphost'
+#USER='yourusername'
+#PASSWD='yourpassword'
+#REMOTEFILE='pathtoremotefile(including filename)'
+#URL='http://yourdomain.com/screens/screenshot.png'
+#
+## If you change this you need to change the rm-line too.
+## For some reason (I'm new at this) I couldn't get the file
+## to disappear when using the variable...
+#LOCALFILE='~/Desktop/tmpScreen.png'
+#
+#ftp -n $HOST <<END_SCRIPT
+#quote USER $USER
+#quote PASS $PASSWD
+#binary
+#put $LOCALFILE $REMOTEFILE
+#bye
+#END_SCRIPT
+#
+#rm ~/Desktop/tmpScreen.png
+#echo $URL | pbcopy
+#
+#
+#
