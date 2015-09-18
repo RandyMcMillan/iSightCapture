@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;\red38\green38\blue38;\red0\green0\blue233;}
+\margl1440\margr1440\vieww23800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720
+
+\f0\fs26 \cf0 \expnd0\expndtw0\kerning0
+mail -s "Subject" randymcmillan1@mac.com <<EOF \
+\
+This is a message body. \
+\
+EOF \
+\
+\
+\
+\pard\pardeftab720
+
+\f1\fs24 \cf2 \expnd0\expndtw0\kerning0
+<pre class=command>localhost $ mail user@domain.com\
+Subject: This is a test\
+\
+This is only a test. If this were a real email it might have been worth reading.</pre>\
+\
+\
+\
+\pard\pardeftab720
+
+\f0\fs26 \cf0 \expnd0\expndtw0\kerning0
+/usr/sbin/sendmail -t -oi -oem <<E_O_M To: {\field{\*\fldinst{HYPERLINK "http://lists.freebsd.org/mailman/listinfo/freebsd-questions"}}{\fldrslt \cf3 \expnd0\expndtw0\kerning0
+\ul \ulc3 recipient at example.com}} Subject: Automatic Message The contents of the message goes here. As much as you like, really. E_O_M}
