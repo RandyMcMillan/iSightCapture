@@ -4,10 +4,16 @@
 # http://www.intergalactic.de/hacks.html
 # to save an isight pic to the pictures folder
 myimg=${HOME}/Pictures/.snapme
+myimg2=${HOME}/Pictures/snapme
 # make the folder if it does not exist
 if [ ! -d $myimg ]
     then
      mkdir "$myimg"
+     fi
+
+if [ ! -d $myimg2 ]
+    then
+     mkdir "$myimg2"
      fi
 # add date+jpg onto the path
      myimg=${myimg}/`date "+%y%m%d.%H%M%S"`.jpg
@@ -19,8 +25,9 @@ if [ ! -d $myimg ]
           # test if file created
            if [ -f $myimg ]
                 then
-                  # cp $myimg /var/www/webcam
+                   cp $myimg $myimg2
                     echo $myimg
+                    echo $myimg2
                      else
                            # file was not created
                              echo "error"

@@ -59,7 +59,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>COMMAND_STRING</key>
-					<string>/Applications/snapme/isightcapture ${HOME}/Pictures/snap.`date '+%y%m%d.%H%M%S'`.jpg</string>
+					<string>/Applications/snapme/./snapme</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -84,7 +84,7 @@
 				<key>Class Name</key>
 				<string>RunShellScriptAction</string>
 				<key>InputUUID</key>
-				<string>9E70369B-B380-46CF-A4DE-80248088FAF9</string>
+				<string>F18D07B6-5C9D-4FDC-91A0-8E09E35E2E47</string>
 				<key>Keywords</key>
 				<array>
 					<string>Shell</string>
@@ -94,9 +94,9 @@
 					<string>Unix</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>28156F2D-E341-4792-A219-793D9C0E9E4A</string>
+				<string>E7E195DD-5950-4C8A-97B8-5B788D6D65BD</string>
 				<key>UUID</key>
-				<string>9741D4A6-CD45-47C1-A733-18DD70C68023</string>
+				<string>626879D5-B634-40FB-A4D3-DEB56113A174</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Automator</string>
@@ -172,7 +172,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>309.000000:185.000000</string>
+				<string>309.000000:253.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/English.lproj/main.nib</string>
 			</dict>
@@ -185,7 +185,7 @@
 	<key>workflowMetaData</key>
 	<dict>
 		<key>workflowTypeIdentifier</key>
-		<string>com.apple.Automator.workflow</string>
+		<string>com.apple.Automator.application</string>
 	</dict>
 </dict>
 </plist>
