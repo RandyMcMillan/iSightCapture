@@ -1,0 +1,29 @@
+# filename /Applications/snapme/snapme
+# returns image path+name or error
+# use the isightcapture software from 
+# http://www.intergalactic.de/hacks.html
+# to save an isight pic to the pictures folder
+myimg=${HOME}/Pictures/.snapme
+# make the folder if it does not exist
+if [ ! -d $myimg ]
+    then
+     mkdir "$myimg"
+     fi
+# add date+jpg onto the path
+     myimg=${myimg}/`date "+%y%m%d.%H%M%S"`.jpg
+# capture the image to the specified path/filname
+     /Applications/snapme/isightcapture $myimg
+# test if parameter quiet in which case - echo nothing
+     if [ ! "$1" = "quiet" ]
+         then
+          # test if file created
+           if [ -f $myimg ]
+                then
+                  # cp $myimg /var/www/webcam
+                    echo $myimg
+                     else
+                           # file was not created
+                             echo "error"
+                              fi
+                              fi
+                              unset myimg
